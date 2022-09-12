@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    font-family: 'Open Sans', Arial, sans-serif;
+
+}
+
+.instructions {
+  width: 50%;
+  border: solid;
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto;
+  word-wrap: break-word
+  
+}
+
+header {
+  margin-top: 20px;
+  font-weight: bold;
+  color: red;
+  }
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  border-right: 2px solid;
+  height: 100%;
+  text-align: center;
+}
+
+.navhead {
+  padding: 0 10px 10px 20px;
+}
+
+.nav-link{
+  padding: 10px 0;
+  border-top: solid 2px;
+  color: white;
+}
+
+
+#main-doc{
+  position: absolute;
+  margin-left: 300px;
+  }
+
+
+.happymodding {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 815px){
+  #navbar {
+  width: 100px;
+  }
+
+  #main-doc{
+  position: absolute;
+  margin-left: 150px;
+  }
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">  
+<title>Installing DOOM (1993) Mods</title>
+  </head>
+  <body>
+  <nav id="navbar">
+<header class="navhead">Installing DOOM (1993) Mods</header>
+<a class="nav-link" href="#Introduction"> Introduction</a>
+<a class="nav-link" href="#What_you_will_need"> What you will need</a>
+<a class="nav-link" href="#Option_One">Option One</a>
+<a class="nav-link" href="#Option_Two">Option Two</a>
+<a class="nav-link" href="#Option_Three">Option Three</a>
+<a class="nav-link" href="#Notes">Notes</a>
+</nav>
+    <main id="main-doc">
+    <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>Here is a tutorial on how to install mods for the classic 1993 DOOM video game.</p>
+    <section class="main-section" id="What_you_will_need">
+    <header>What you will need</header>
+    <p>Here is a list of what you'll need:</p>
+    <ul>
+      <li>a PC</li>
+      <li>an IWAD (DOOM.WAD, DOOM2.WAD etc)</li>
+      <li>relevant mods to install in .WAD or .PK3 format (more on this later)</li>
+    </ul>
+    </section>
+    <section class="main-section" id="Option_One">
+    <header>Option One</header>
+    <p>This is the "Drag and Drop" install method. It is the simplest method but is not recommended if you have a lot of mods or if you need to configure the load order (some mods may not work depending on the order in which they are loaded).</p>
+    <p>If you are only using one or two modifications (eg Brutal Doom), this method should be sufficient.</p>
+    <div class="instructions"><code><p><ol><li>Go to https://zdoom.org/downloads to download the latest version of GZDoom</li></p>
+
+<p><li>Extract and open the GZDoom folder</li></p>
+
+<p><li>Place your IWAD files (Doom.wad, Doom2.wad, Plutonia.wad, etc.) into the GZDoom folder</li></p>
+
+<p><li>Select all the files you want to use (Ctrl + Left Mouse Button) and drag them over the gzdoom.exe</li></p></ul></code></div>
+
+<!-- Wrapped in a container for the border. The instructions are in code format to fulfil the user story but, tbf, it looks cool & distinguishable anyway ^_^ -->
+
+</section>
+<section class="main-section" id="Option_Two">
+  <header>Option Two</header>
+  <p>This is the "Config File" install method. This is a good way to manage your mod load order without using a launcher, though it is more technical than the other methods.</p>
+  <div class="instructions"><code><p><ol><li>Go to https://zdoom.org/downloads to download the latest version of GZDoom</li></p>
+
+<p><li>Extract and open the GZDoom folder</li></p>
+
+<p><li>Place your IWAD files (Doom.wad, Doom2.wad, Plutonia.wad, etc.) into the GZDoom folder</li></p>
+
+<p><li>Run gzdoom.exe</li></p>
+
+<p><li>This will create a gzdoom.ini file in your GZDoom folder</li></p>
+
+<p><li>Open the gzdoom.ini with Notepad</li></p>
+
+<p><li>Scroll down to the [Global.Autoload] section and type in Path=$PROGDIR/ and then the rest of the filename(s) for which file(s) you want to automatically load when GZDoom runs</li></p>
+
+<p><li>Save and exit from Notepad</li></p>
+
+<p><li>Whenever gzdoom.exe is ran, the files typed in the gzdoom.ini will be automatically loaded</li></p></ol></code></div>
+<br>
+<div class="instructions"><code><p><ol>Example from Step 7:</p>
+
+[Global.Autoload]<br>
+Path=$PROGDIR/<br>Project_Brutality_Test (10-1-17).pk3<br>
+Path=$PROGDIR/PB_Allow_SV_Cheats.pk3<br>
+Path=$PROGDIR/Doom_Metal_Vol_4.wad</ol></code></div>
+</section>
+<section class="main-section" id="Option_Three">
+  <header>Option Three</header>
+  <p>This is the "ZDL" install method. This is a good way to manage your mod load order by using the ZDL launcher. <strong>This method is recommended for all users.</strong></p>
+
+<div class="instructions"><code><ol>
+
+<p><li>Go to https://github.com/qbasicer/qzdl to download the latest version of ZDL</li></p>
+
+<p><li>Extract and open the ZDL folder</li></p>
+
+<p><li>Run ZDL.exe</li></p>
+
+<p><li>Click on the Settings tab</li></p>
+
+<p><li>Under the Source Ports/Engines section, click the Add button and then browse for the gzdoom.exe</li></p>
+
+<p><li>Under the IWADs section, click the Add button and then browse for your IWAD files (Doom.wad, Doom2.wad, Plutonia.wad, etc.)</li></p>
+
+<p><li>Click on the Main tab</li></p>
+
+<p><li>Under the External Files section, click the Add button and then browse for any files you want to use when gzdoom.exe is ran</li></p>
+
+<p><li>Select which IWAD you want to play and then click on the Launch button</li></p></code>
+</section>
+<section class="main-section" id="Notes">
+  <header>Notes</header>
+  <p>I have not had any issues with the load order that I use, but be aware that there is a supposed load order for files. If you're experiencing issues with your mods, they might be conflicting with one another because of the order in which they are being loaded. According to the Project Brutality v2.03a user manual, the load order should go like this (from top to bottom):</p>
+<code><ul><li>Map Packs, Megawads, Wads, etc.</li>
+
+<li>Music Wads</li>
+
+<li>Brutal Doom/Project Brutality</li>
+
+<li>Compatability Patches</li>
+
+<li>HUD Mods</li>
+
+<li>Everything else</li></ul></code>
+</section>
+<div class="happymodding"><header>Happy Modding!</header></div>
+  </main>
+  </body>
+</html>
